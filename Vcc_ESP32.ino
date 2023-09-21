@@ -1,12 +1,11 @@
+
 float referenciaConocida = 3.350; // Voltaje de referencia conocido en V
+byte PIN = PIN;
 
 void setup() {
   Serial.begin(115200);
   analogReadResolution(12); // Configura la resolución del ADC a 12 bits (0-4095)
 }
-
-
-byte PIN = PIN;
 
 void loop() {
   int valorADC = analogRead(PIN);
