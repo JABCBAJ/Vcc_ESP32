@@ -5,8 +5,11 @@ void setup() {
   analogReadResolution(12); // Configura la resolución del ADC a 12 bits (0-4095)
 }
 
+
+byte PIN = PIN;
+
 void loop() {
-  int valorADC = analogRead(25);
+  int valorADC = analogRead(PIN);
 
   // Calibración: Calcula el factor de escala
   float factorDeEscala = referenciaConocida / valorADC;
@@ -15,7 +18,7 @@ void loop() {
   float voltajeCalibrado = valorADC * factorDeEscala;
 
   Serial.print("Valor ADC en el pin ");
-  Serial.print(25);
+  Serial.print(PIN);
   Serial.print(": ");
   Serial.print(valorADC);
   Serial.print(", factorDeEscala: ("); Serial.print(factorDeEscala, 4); Serial.print(")");
