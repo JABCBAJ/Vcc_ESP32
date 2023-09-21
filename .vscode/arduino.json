@@ -1,0 +1,10 @@
+{
+    "sketch": "Vcc_ESP32.ino",
+    "sketchbook.path": "C:/Users/JABCB/OneDrive/ARDUINO/libraries",
+    "configuration": "PSRAM=disabled,PartitionScheme=default,CPUFreq=240,FlashMode=qio,FlashFreq=80,FlashSize=4M,UploadSpeed=921600,DebugLevel=none",
+    "board": "esp32:esp32:esp32",
+    "programmer": "arduino:arduino:arduinoisp",
+    "port": "COM4",
+    "output": "../ArduinoOutput"
+    
+}
